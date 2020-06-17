@@ -1,0 +1,8 @@
+<div>
+    <h1> K-pop music video list-</h1>
+    <ul *ngFor = "let mv of MVList">
+        <li>
+            {{mv.MVArtistName}} - {{mv.MVTitleTrack}} <br/> <a [href] = "mv.MVYoutubeURL">click</a>
+        </li>
+    </ul>
+</div>

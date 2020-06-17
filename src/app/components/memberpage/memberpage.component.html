@@ -1,0 +1,19 @@
+<div class="member-list">
+    <ul  class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor = "let a of artist_data">
+            <div class="card mb-6">
+                <div class="row no-gutter" >
+                  <div class="col-sm-2" >
+                    <img [src]="a.Profile_img_url" class="card-img" >
+                  </div>
+                  <div class="col-sm-8" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{a.ArtistName}}</h5>
+                      <p class="card-text">Birthdate : {{a.Birthday | date}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+</div>
